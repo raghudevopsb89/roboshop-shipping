@@ -1,0 +1,4 @@
+com/roboshop/shipping/ShippingApplication.class
+com/roboshop/shipping/controller/ShippingController.class
+com/roboshop/shipping/model/City.class
+com/roboshop/shipping/repository/CityRepository.class
