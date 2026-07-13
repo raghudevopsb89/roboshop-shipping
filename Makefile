@@ -1,10 +1,16 @@
-.PHONY: build run docker-build db-init clean
+.PHONY: build run unit-test integration-test docker-build db-init clean
 
 build:
 	mvn clean package -DskipTests
 
 run:
 	DB_HOST=localhost mvn spring-boot:run
+
+unit-test:
+	mvn test
+
+integration-test:
+	mvn verify
 
 docker-build:
 	env
